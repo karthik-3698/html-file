@@ -1,62 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewpoint" content="width=device-width,intial-scale=1.0">
-        <meta name="keywords" content="js,css,html"/>
-        <title>class 11</title>
-        <caption><h1><marquee>kabaddi teams</marquee></h1></caption>
-        <style>table,th,td,tr {border: 1px solid black;border-collapse: collapse;}</style>
-    </head>
-    <body>
-       <table>
-        <tr>
-            <th>TEAM NAMES</th>
-            <th>TEAM INFO</th>
-            <th>SCHEDULE</th>
-        </tr>
-        <tr>
-            <th>U MUMBA</th>
-            <td>U Mumba is a professional kabaddi team based in Mumbai, Maharashtra, that plays in the Pro Kabaddi League.</td>
-            <td colspan="2"><pre><a href="https://www.google.com/search?client=firefox-b-d&q=u+mumba">
-            DEC 17
-            DEC 24
-            </a>
-            </pre></td>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>psuedo classes and elements</title>
+    <style>
+        .box{
+            border: 2px solid black;
+            height: 500px;
+            width: 600px;
+            margin: 30px 200px 20px 600px;
+            padding: 30px;
+            background-color: blanchedalmond;
+            font-size: 30px;
             
-        </tr>
-        <tr><th>TELUGU TITANS</th>
-            <td>Telugu Titans is a professional kabaddi team based in Vishakapatnam and Hyderabad that plays in the Pro Kabaddi League</td>
-            <td><pre><a href="https://www.google.com/search?client=firefox-b-d&q=telugu+titans">
-                <ol>
-            <li>DEC 13</li>
-            <li>DEC 16</li>
-           <li> DEC 22</li>
-                </ol>
-            </a>
-            </pre></td>
-        </tr>
-        <tr>
-            <th>UP YODDHAS</th>
-            <td>UP Yoddhas is a professional kabbadi team of Pro Kabaddi League, based in Lucknow, Uttar Pradesh. It is owned by GMR Group</td>
-            <td><pre><a href="https://www.google.com/search?client=firefox-b-d&q=upyoddhas" target="_blank">
-            <li>DEC 18</li>
-            <li>DEC 20</li>
-            <li>DEC 23</li>
-            </ul>
-            </a>
-            </pre></td>
-        </tr>
-        <tr>
-            <th>PUNARI PALTANS</th>
-            <td>Puneri Paltan is a professional kabaddi team which represents the city of Pune, Maharashtra in the Pro Kabaddi League</td>
-            <td><a href="https://www.google.com/search?client=firefox-b-d&q=puneri+paltan">
-            <li>DEC 15</li>
-            <li>DEC 16</li>
-            <li>DEC 18</li>
-            </ol>
-            </a></td>
-        </tr>
-       </table>
-    </body>
+        }
+        .box2{
+            height: 350px;
+            width: 200px;
+            border: 2px solid black;
+            margin: 20px;
+        
+        }
+        #plc1:checked~ .box2{
+            background-image: url(https://cdn.123telugu.com/content/wp-content/uploads/2023/09/salaar-4.jpg);
+            background-size: 230px;
+        }
+        #plc2:checked~ .box2{
+            background-image: url(https://content.tupaki.com/twdata/2022/0122/news/Ram-Charan-Shows-The-Way-To-Become-Successful--1642058575-143.jpg);
+            background-size: 230px;
+            background-repeat: no-repeat;
+        }
+        #plc3:checked~ .box2{
+            background-image: url(https://st1.bollywoodlife.com/wp-content/uploads/2023/03/allu-arjun1-1.jpg);
+            background-size: 230px;
+            background-repeat: no-repeat;
+        }
+        #plc4:checked~ .box2{
+            background-image: url(https://e0.pxfuel.com/wallpapers/538/665/desktop-wallpaper-jr-ntr-latest-new-recent-hq-pics-jr-ntr.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        #plc5:checked~ .box2{
+            background-image: url(https://akm-img-a-in.tosshub.com/indiatoday/images/media_bank/202308/vijay-deverakonda-095717-1x1.jpg?VersionId=xu9BbvdF8BtrELuVvuABLdc4ShREyISr);
+            background-size: 350px;
+            background-repeat: no-repeat;
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <input id="plc1" name="place" type="radio">prabhas
+        <input id="plc2" name="place" type="radio">ramcharan
+        <input id="plc3" name="place" type="radio">alluarjun
+        <input id="plc4" name="place" type="radio">ntr
+        <input id="plc5" name="place" type="radio">vijay
+        <div class="box2"></div>
+    </div>
+    
+</body>
 </html>
